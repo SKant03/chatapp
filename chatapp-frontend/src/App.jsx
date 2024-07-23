@@ -1,31 +1,47 @@
 import { Component, useState } from 'react'
 import './App.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <div className='body_container  bg-purple-500 w-screen h-screen flex justify-center items-center'>
-      <div className='login_container container max-w-2xl bg-white bg-opacity-50 backdrop-blur p-11 border-2 border-white rounded-xl shadow-xl '>
-        <h1 className='text-center font-extrabold text-5xl'>Appli_name </h1>
-        <form action="">
-          <div className="forminternlcomp flex">
-            <div className="qr_container w-1/2">Qr</div>
-            <div className="detailinputcontainer w-1/2 flex flex-col">
-              <h1 className='text-center font-bold text-3xl'>Login</h1>
-              <label>
-                <span className='sr-only'>Username</span>
-                
-              </label>
-              <input type="password" placeholder='passsward' className='border' />
-              <button>Login</button>
-            </div>
+    <div className="bg-neutral-800 text-white font-serif">
+
+
+
+    <div className="text-center font-bold text-4xl pt-5">Broadcast Chat</div>
+
+    <hr />
+
+    <div className=" flex w-screen h-screen p-5">
+
+
+      <div className="container basis-2/5 bg-neutral-700 rounded-2xl p-3">
+        <div  className="flex justify-between">
+          <div className="font-bold text-xl">Chats</div>
+          <button><FontAwesomeIcon icon="fa-brands fa-rocketchat" style={{color: "#ffffff"}}/></button>
+        </div>
+        <div className="chatsaccounts">
+          {/* the script generate the chat user */}
+          <div className='conatiner px-4 py-4 flex justify-between'>
+            <img src="" alt="userimage" />
+            <div className="font-bold">NAME</div>
           </div>
-          <hr />
-          <p>Not registered signup</p>
-        </form>
+        </div>
       </div>
+      <div className="container ">
+        <div className='conatiner px-4 py-4 flex '>
+            <img src="" alt="userimage" />
+            <div className="font-bold">NAME</div>
+          </div>
+          <div className="chat "></div>
+          <div className="container fixed-bottom">chat</div>
+      </div>
+    </div>
+
+
 
     </div>
     </>
