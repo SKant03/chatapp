@@ -28,19 +28,7 @@ function App() {
 
         </div>
       </div>
-      <div className="container ">
-        <div className='conatiner px-4 py-4 flex '>
-            <img src="" alt="userimage" />
-            <div className="font-bold">NAME</div>
-          </div>
-          <div className="chat "></div>
-          <div className="container fixed-bottom">chat</div>
-      </div>
-    </div>
-
-
-
-    </div>
+      
     </>
   )
 }
